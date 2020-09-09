@@ -1,4 +1,4 @@
-# cardify
+# Cardify
 
 An expense managing app
 
