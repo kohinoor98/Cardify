@@ -1,16 +1,38 @@
 # Cardify
 
-An expense managing app
+An app where you can keep records of your transactions
 
-## Getting Started
+<p align="center">
+  <img style="border-width: 0" width="400" height="400" src="https://github.com/AmarjitM13/Cardify/blob/master/utils/logo.png" alt="drummer logo">
+</p>
 
-This project is a starting point for a Flutter application.
+# Motivation 
+There are many apps available in the play store that does almost the same work, but none of those has a good interface and I had to use two or three different apps to use their different functionality. So I decided to create this app where you will get many funtionalities in one place.
 
-A few resources to get you started if this is your first Flutter project:
+# Screenshots
+<img src="https://github.com/AmarjitM13/Cardify/blob/master/utils/screenshot.jpg">
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+# Tech/Framework Used
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Built with**
+
+[<img align="left" alt="Flutter" width="26px" src="https://github.com/AmarjitM13/AmarjitM13/blob/master/Icons/flutter.png" />][website]
+[<img align="left" alt="Dart" width="26px" src="https://github.com/AmarjitM13/AmarjitM13/blob/master/Icons/dart.png" />][website]
+
+</details>
+
+[website]: https://www.flutter.dev/
+
+<br />
+
+# Code Style
+Just follow the 
+[Dart style guides ](https://dart.dev/guides/language/effective-dart/style) by google
+
+# How to contribute?
+1. Fork the project.
+1. Create a different branch.
+1. Add your code to that branch.
+1. Create a [pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) 
+
+<p align="center">Made with :heart: by Amarjit Mallick</p>
