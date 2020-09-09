@@ -1,5 +1,3 @@
-
-
 <p align="center">
   <img style="border-width: 0" width="400" height="400" src="https://github.com/AmarjitM13/Cardify/blob/master/utils/logo.png" alt="drummer logo">
 </p>
@@ -12,7 +10,7 @@ An app where you can keep records of your transactions
 There are many apps available in the play store that does almost the same work, but none of those has a good interface and I had to use two or three different apps to use their different functionality. So I decided to create this app where you will get many funtionalities in one place.
 
 # Screenshots
-<img src="https://github.com/AmarjitM13/Cardify/blob/master/utils/screenshot.jpg">
+<img style="border-width: 0" width="360" height="720" src="https://github.com/AmarjitM13/Cardify/blob/master/utils/screenshot.jpg">
 
 # Tech/Framework Used
 
