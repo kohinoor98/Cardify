@@ -4,6 +4,9 @@ import 'package:cardify/utilities/accounts_view.dart';
 import 'package:cardify/utilities/balance_widget.dart';
 import 'package:cardify/utilities/credit_&_debit_card.dart';
 
+import 'constants.dart';
+import 'constants.dart';
+
 class HomeView extends StatefulWidget {
   @override
   _HomeViewState createState() => _HomeViewState();
@@ -14,25 +17,41 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kBackgroundColor,
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: kPrimaryColor,
-        title: Padding(
-          padding: const EdgeInsets.only(left: 10, top: 20, bottom: 20),
-          child: Text(
-            "Cardify",
-            style: TextStyle(
-                fontSize: 30, fontWeight: FontWeight.bold, letterSpacing: 0.8),
+      body: NestedScrollView(
+        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+          return <Widget>[
+            SliverAppBar(
+              backgroundColor: kPrimaryColor,
+              expandedHeight: 200,
+              pinned: true,
+              flexibleSpace: FlexibleSpaceBar(
+                titlePadding: EdgeInsets.zero,
+                title: Padding(
+                  padding: const EdgeInsets.only(left: 25, top: 0, bottom: 10),
+                  child: Text(
+                    "Cardify",
+                    style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 0.8),
+                  ),
+                ),
+                // background: Image.asset(
+                //   '022.jpg', // <===   Add your own image to assets or use a .network image instead.
+                //   fit: BoxFit.cover,
+                // ),
+              ),
+            ),
+          ];
+        },
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              CardView(),
+              BalanceView(),
+              AccountsView(),
+            ],
           ),
-        ),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            CardView(),
-            BalanceView(),
-            AccountsView(),
-          ],
         ),
       ),
       bottomNavigationBar: Container(
